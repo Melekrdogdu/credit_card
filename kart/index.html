@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/kkarti.css">
+    <script src="./js/jq.js"></script>
+    <script src="./js/KKarti.js"></script>
+</head>
+
+<body>
+    <div id="anaKart">
+        <div id="kart">
+            <div id="kartici">
+                <div id="kon">
+                    <div id="isaretci"></div>
+                    <div id="kno">
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span> </span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span> </span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span> </span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                        <div class="digit"><span>#</span></div>
+                    </div>
+                    <div id="altSatir">
+                        <div id="kad"><div class="adDiv holder">İsim Soyisim </div></div>
+                        <div id="ktar">22/25</div>
+                    </div>
+                </div>
+                <div id="karka">
+                    <div id="bant">
+
+                    </div>
+                    <div id="cvvMetin">
+                        123
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kform">
+            <form action="">
+                <div class="fsatir">
+                    <label for="kfnumara">Kart Numarası</label>
+                    <input type="text" name="kfnu" id="kfnumara" maxlength="19" pattern="[0-9] {16}"
+                        placeholder="Kart No">
+                </div>
+
+
+                <div class="fsatir">
+                    <label for="kfad">İsim Soyisim</label>
+                    <input type="text" name="kfad" id="kfad" placeholder="İsim Soyisim">
+                </div>
+
+                <div class="fsatir">
+                    <div id="fayyil">
+                        <label for="kfay">Son Kullanma Tarihi</label>
+                        <div>
+                            <select name="kfay" id="kfay">
+                                <option value="">AY</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="kfyl" id="kfyl">
+                                <option value="">YIL</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                                <option value="2034">2034</option>
+                                <option value="2035">2035</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="fcvv">
+                        <label for="">CVV</label>
+                        <input type="text" name="kfcvv" id="kfcvv" placeholder="CVV" pattern="[0-9][0-3]">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
