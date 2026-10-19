@@ -1,9 +1,9 @@
 #anaKart,
-#anaKart * {
-    top: auto;
-    left: auto;
-    position: relative;
-    display: block;
+#anaKart {
+    background-color: rgb(137, 178, 214);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 #anaKart {
