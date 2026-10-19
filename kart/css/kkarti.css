@@ -1,11 +1,3 @@
-
-#anaKart {
-    background-color: rgb(137, 178, 214);
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-}
-
 #anaKart {
     background-color: rgb(137, 178, 214);
     padding: 25px;
@@ -19,10 +11,8 @@
     border-radius: 20px;
     cursor: pointer;
     position: absolute;
-    /* kartın konumunu ayarlarken diger elemanlara ellemez hareket ettirmez */
     z-index: 2;
     perspective: 380px;
-    /* 3D dönüşüm için gerekli */
 }
 
 #anaKart #kart #kartici {
@@ -35,17 +25,15 @@
     border-radius: 20px;
     box-shadow: 0px 0px 5px 3px black;
     transition: all 0.6s ease-in-out;
-    /* kartın dönerkenki geçiş süresi */
     transform-style: preserve-3d;
-    /* 3D dönüşüm için gerekli */
-
-
 }
 
 #anaKart #kart #kartici #kon #kno {
     width: 100%;
     padding: 10px 22px;
     display: flex;
+    flex-direction: row; /* Rakamların yan yana durmasını kesinleştirir */
+    align-items: center;
     transform: translateY(71px);
     height: 29px;
     overflow: hidden;
@@ -67,8 +55,7 @@
 }
 
 .yokOl {
-    margin-top: -50px !important
-        /*genelde idye verilen daha önemli sayılıyo o yuzden yukardaki önemli görüldü buna imp verdik.*/
+    margin-top: -50px !important;
 }
 
 #anaKart #kart #kartici #karka #bant {
@@ -106,24 +93,19 @@
 .knoIsaretci{
     width: 306px !important;
     transform: translate(8px,75px)!important;
-
 }
 
 .kadIsaretci{
     width: 196px!important;
     transform: translate(8px,131px)!important;
-
 }
 
 .ktarihIsaretci{
     width: 72px!important;
     transform: translate(234px,131px)!important;
-
 }
 
-
-
-/* KART FORM SİTİLLERİ*/
+/* KART FORM STİLLERİ */
 
 #anaKart #kform {
     width: 400px;
@@ -133,14 +115,12 @@
     box-shadow: 0px 0px 10px 0px black;
     margin-top: 100px;
     padding: 200px 30px 100px 30px;
-
 }
 
 #anaKart #kform .fsatir {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /*sıgmazsa alt satıra geçsin*/
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -150,7 +130,6 @@
     color: rgb(49, 48, 48);
     width: 100%;
     padding-bottom: 3px;
-
 }
 
 #anaKart #kform .fsatir input,
@@ -160,9 +139,8 @@
     width: 100%;
     border-radius: 10px;
     padding: 3px 8px 3px 8px;
-    /* üst sağ alt sol iç boşluk */
     transition: all 0.3s ease-in-out;
-    background-color: white
+    background-color: white;
 }
 
 #anaKart #kform .fsatir input:hover,
@@ -174,7 +152,6 @@
 }
 
 #anaKart #kform .fsatir input:invalid {
-    /* geçersiz girişteki stil  yani yanlış yazarsak kırmızı olr*/
     color: red;
 }
 
@@ -196,10 +173,8 @@
     width: 70px;
 }
 
-
 #anaKart #kform .fsatir #kfnumara {
     direction: ltr;
-    /* soldan sağa yazı yazma */
 }
 
 #anaKart #kart #kartici #kon,
@@ -208,11 +183,11 @@
     height: 100%;
     color: white;
     position: absolute;
+    top: 0;   /* Eklendi */
+    left: 0;  /* Eklendi */
     transform: rotateY(0deg);
     backface-visibility: hidden;
-    /* arka yüzü gizle */
     overflow: hidden;
-
 }
 
 #anaKart #kart #kartici #karka {
@@ -221,7 +196,6 @@
 
 .kartDon {
     transform: rotateY(180deg);
-
 }
 
 #anaKart #kart #kartici #kon #altSatir {
